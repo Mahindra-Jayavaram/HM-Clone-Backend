@@ -17,7 +17,7 @@ function signIn()
    if (bag === "userDetails")
    {
        alert("Login Successfully");
-       window.location.href = "homepage.html";
+       window.open("/index");
    }
    else
    {

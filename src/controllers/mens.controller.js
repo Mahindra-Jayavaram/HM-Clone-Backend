@@ -18,7 +18,7 @@ router.get('', async(req, res) => {
     return res.render('mens',{
       mens
     })
-    // return res.status(201).send(womens);
+    // return res.status(201).send(mens);
   } catch (err) {
     return res.status(500).send({err:err.message})
   }

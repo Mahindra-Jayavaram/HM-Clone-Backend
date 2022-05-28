@@ -287,7 +287,7 @@
                     We will process your personal data in accordance with the H&Ms Privacy Notice.</h6>
                   
      <!-- </div> -->
-     <button class="btn" id="btn">COMPLETE PURCHASE</button>
+     <a href="/index"><button class="btn" id="btn" onclick="complete()">COMPLETE PURCHASE</button></a>
      <hr>
      <div class="terms-Cond">
         <img src="https://i1.lmsin.net/website_images/common/images/logos/logo-comodo.png" alt="" width="60px">
@@ -300,6 +300,12 @@
 </html>
 
 <script type="module">
+
+  function complete()
+
+  {
+    alert("Purchased Succesfuly")
+  }
   import checkout from "./components/checkout.js"
 
   document.getElementById("tot").innerHTML=checkout()
@@ -407,7 +413,8 @@ document.querySelector("#btn").addEventListener("click", function () {
     localStorage.setItem("cwp1", JSON.stringify(dataArr));
     alert("Order Placed");
     localStorage.removeItem("cartStorageData");
-    window.location.href = "homepage.html";
+    // window.location.href = "homepage.html";
+    window.open("/index")
   }
 
   // console.log(Fullname, name,city,state,building,street,cardnum,landmark,nameCard,cvv);

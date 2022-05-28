@@ -67,9 +67,15 @@ app.use('/kid', kidController);
 app.use('/men', menController);
 app.use('/men/:id', menController);
 
-app.listen(1313, async()=>{
-    await connect();
-    console.log("Listining on port 1313")
+app.listen(process.env.PORT || 1342, async () => {
+  try{
+      await connect();
+      console.log('Listening on Port 1342');
+  }
+  catch(err)
+  {
+      console.log(err.message);
+  }
 });
 
 // onClick = window.location.href = `/route/${mongo._id}`

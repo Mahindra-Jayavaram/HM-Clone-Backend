@@ -558,7 +558,7 @@
                     <option value="4XL">4XL</option>
                 </select>
             </div>
-            <button id = "addBag">Add</button>
+            <a href="/cart"><button id = "addBag">Add</button></a>
         </div>
     </div>
 
@@ -678,6 +678,20 @@
 </html>
 
 <script>
+
+// var cart = JSON.parse(localStorage.getItem("cartData")) || []
+
+// function getData(mens) {
+
+//   console.log('items:',mens)
+//   let men = JSON.parse(mens)
+//   cart.push(men)
+//   console.log(men)
+//   localStorage.setItem('cartData', JSON.stringify(cart));
+
+//   window.open("/cart");
+
+  
 //     let cart_arr =JSON.parse(localStorage.getItem("ItemArr"))|| [];
 //     // let cart_arr = [];
 //     function clicked()
@@ -1005,5 +1019,4 @@ function displayItems()
 {
   window.open("/index");
 }
-    // console.log(womens);
 </script>

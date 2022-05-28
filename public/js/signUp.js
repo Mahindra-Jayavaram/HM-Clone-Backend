@@ -45,7 +45,8 @@ function member(){
 
         localStorage.setItem("data",JSON.stringify(userData));
         // alert("Account Created Successfully");
-        window.location.href = "signIn.html";
+        // window.location.href = "signIn.html";
+        window.open("/signIn");
     }
 
 }
